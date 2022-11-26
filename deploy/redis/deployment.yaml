@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: reds
+  name: reds
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: reds
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: reds
+    spec:
+      containers:
+      - image: redis:alpine
+        name: redis
+        resources: {}
