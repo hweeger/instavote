@@ -3,19 +3,19 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: reds
-  name: reds
+    app: redis
+  name: redis
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: reds
+      app: redis
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: reds
+        app: redis
     spec:
       containers:
       - image: redis:alpine
