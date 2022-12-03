@@ -10,7 +10,6 @@ spec:
   selector:
     matchLabels:
       app: worker
-  strategy: {}
   template:
     metadata:
       creationTimestamp: null
@@ -20,4 +19,3 @@ spec:
       containers:
       - image: schoolofdevops/worker:latest
         name: worker
-        resources: {}
